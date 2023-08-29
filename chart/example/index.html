@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="./style.css" type="text/css">
+  <title>chartjs-plugin-datasource-prometheus Samples</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <form id="refresh-form">
+      <input type="text" id="endpoint" placeholder="Prometheus endpoint">
+      <input type="text" id="query" placeholder="Prometheus query">
+      <button>Refresh</button>
+    </form>
+
+    <section id="doc"><a href="https://github.com/samber/chartjs-plugin-datasource-prometheus">Documentation</a></section>
+
+    <div id="myChart">
+      <canvas></canvas>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3/dist/chartjs-adapter-date-fns.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datasource-prometheus@2/dist/chartjs-plugin-datasource-prometheus.umd.min.js" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
